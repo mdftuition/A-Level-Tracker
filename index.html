@@ -4414,4 +4414,14 @@ if (!localStorage.getItem('mdf_onboarded') && !data.subjects.length && !data.pro
   }
   window.checkPassword = checkPassword;
   // Check on load
-  if (localStorage.getItem(STORAGE_KEY) !==
+  if (localStorage.getItem(STORAGE_KEY) !== '1') {
+    document.getElementById('pw-gate').style.display = 'flex';
+  }
+})();
+</script>
+
+<!-- Vercel Web Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>
