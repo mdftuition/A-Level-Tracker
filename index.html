@@ -974,9 +974,9 @@ select option { background: var(--surface2); }
             <div style="font-family:var(--font-display);font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;">Get in touch</div>
             <div style="font-size:11px;color:var(--text3);margin-bottom:14px;">We are happy to help with any questions.</div>
             <div style="display:flex;flex-direction:column;gap:8px;">
-              <a href="mailto:mdftuition@gmail.com" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--electric-dim);border:1px solid var(--electric-glow);border-radius:8px;text-decoration:none;" onmouseover="this.style.background='rgba(42,92,255,0.2)'" onmouseout="this.style.background='var(--electric-dim)'">
+              <a href="/cdn-cgi/l/email-protection#b3ded7d5c7c6dac7dadcddf3d4ded2dadf9dd0dcde" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--electric-dim);border:1px solid var(--electric-glow);border-radius:8px;text-decoration:none;" onmouseover="this.style.background='rgba(42,92,255,0.2)'" onmouseout="this.style.background='var(--electric-dim)'">
                 <span style="font-size:18px;">✉️</span>
-                <div><div style="font-size:11px;font-weight:700;color:var(--electric);">Email us</div><div style="font-size:11px;color:var(--text3);">mdftuition@gmail.com</div></div>
+                <div><div style="font-size:11px;font-weight:700;color:var(--electric);">Email us</div><div style="font-size:11px;color:var(--text3);"><span class="__cf_email__" data-cfemail="c4a9a0a2b0b1adb0adabaa84a3a9a5ada8eaa7aba9">[email&#160;protected]</span></div></div>
               </a>
               <a href="https://wa.me/447822034367" target="_blank" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.3);border-radius:8px;text-decoration:none;" onmouseover="this.style.background='rgba(37,211,102,0.2)'" onmouseout="this.style.background='rgba(37,211,102,0.1)'">
                 <span style="font-size:18px;">💬</span>
@@ -995,6 +995,12 @@ select option { background: var(--surface2); }
           </svg>
         </a>
       </div>
+    </div>
+
+    <!-- Laptop recommendation banner -->
+    <div style="background:linear-gradient(135deg,rgba(255,177,66,0.08) 0%,rgba(255,177,66,0.04) 100%);border:1px solid rgba(255,177,66,0.3);border-left:3px solid var(--amber);border-radius:var(--radius);padding:10px 16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;">
+      <span style="font-size:18px;flex-shrink:0;">💻</span>
+      <span style="font-size:12px;color:var(--text2);line-height:1.5;">For the best experience, <strong style="color:var(--amber);">use this tracker on a laptop or desktop browser.</strong> All features work on mobile but the full layout is designed for larger screens.</span>
     </div>
 
     <div class="stats-grid" id="dash-stats">
@@ -2109,7 +2115,7 @@ select option { background: var(--surface2); }
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ═══════════════════════════════════════════════════════════════
 // DATA MODEL — localStorage backed
 // ═══════════════════════════════════════════════════════════════
@@ -4408,14 +4414,4 @@ if (!localStorage.getItem('mdf_onboarded') && !data.subjects.length && !data.pro
   }
   window.checkPassword = checkPassword;
   // Check on load
-  if (localStorage.getItem(STORAGE_KEY) !== '1') {
-    document.getElementById('pw-gate').style.display = 'flex';
-    window.addEventListener('load', function() {
-      var inp = document.getElementById('pw-input');
-      if (inp) inp.focus();
-    });
-  }
-})();
-</script>
-</body>
-</html>
+  if (localStorage.getItem(STORAGE_KEY) !==
